@@ -51,4 +51,10 @@ tcc-transaction不和底层使用的rpc框架耦合，也就是使用doubbo,thri
 
 PS : 需要保证CONFIRM和CANCEL方法的幂等性。
 
+问题：
+    tcc_transaction_asset 一直连接不上、或者保存的时候突然失败。
+    1、重启后连接不上 tcc_transaction_asset 数据库，会导致有单边账目。
+    2、先保存 tcc_transaction_asset 记录，来实现的保证操作后，保证信息的不丢失。
+    3、quartz 定时轮训初始化 非正常的状态。
+    4、都是provider，在执行前更新状态。 并在执行结束后删除  tcc_transaction_asset 记录 。
 
