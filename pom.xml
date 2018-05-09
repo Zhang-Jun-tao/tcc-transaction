@@ -25,13 +25,13 @@
         <java.target.version>1.6</java.target.version>
         <project.encoding>UTF-8</project.encoding>
 
-        <repo.internal.snapshots.url>http://repo1.maven.org/maven2
+       <!-- <repo.internal.snapshots.url>http://repo1.maven.org/maven2
         </repo.internal.snapshots.url>
         <repo.internal.releases.url>http://repo1.maven.org/maven2
         </repo.internal.releases.url>
         <repo.proxy.url>http://repo1.maven.org/maven2</repo.proxy.url>
 
-        <repo.external.url>http://repo1.maven.org/maven2</repo.external.url>
+        <repo.external.url>http://repo1.maven.org/maven2</repo.external.url>-->
 
     </properties>
 
@@ -448,7 +448,7 @@
 
     </build>
 
-    <distributionManagement>
+    <!--<distributionManagement>
         <repository>
             <id>repo.releases</id>
             <name>internal corporate repository</name>
@@ -459,6 +459,6 @@
             <name>internal corporate snapshots repository</name>
             <url>${repo.internal.snapshots.url}</url>
         </snapshotRepository>
-    </distributionManagement>
+    </distributionManagement>-->
 
 </project>
